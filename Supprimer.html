@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page de suppression</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="suppression.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <script src="suppression.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <h2>Orange Digital Kalanso</h2>
+        <img src="Orange_logo.svg.png" alt="Image représantant le logo d'Orange" width="50px" height="50px">
+    </div>
+    <nav class="menu">
+      <ul>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="Enregistrer.html">Enregistrer</a></li>
+            <li><a href="Rechercher.html">Rechercher</a></li>
+            <li><a href="Modifier.html">Modifier</a></li>
+            <li><a href="Supprimer.html">Supprimer</a></li>
+            <li><a href="list.php">Liste</a></li>
+        </ul>
+      </ul>
+    </nav>
+  </header>
+  <h3>La suppression d'apprenant</h3>
+  <form action="suppression.php" method="post" accept-charset="utf-8">
+    <div class="container">
+      <div class="form-group">
+        <label for="matricule">Matricule :</label>
+        <input type="text" name="matricule" id="matricule" placeholder="Saisir le matricule" required>
+      </div>
+      <div class="form-group">
+        <label for="nom">Nom :</label>
+        <input type="text" name="nom" id="nom" placeholder="Saisir le nom" required>
+      </div>
+      <div>
+        <div class="form-group">
+          <label for="prenom">Prénom :</label>
+          <input type="text" name="prenom" id="nom" placeholder="Saisir le prénom" required>
+        </div>
+        <div>
+        <input type="submit" value="Supprimer">
+      </div>
+    </div>
+    </div>
+  </form>
+  <footer>
+    
+  </footer>
+</body>
+</html>

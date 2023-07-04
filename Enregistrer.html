@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Page d'enregistrement</title>
+    <script src="enregistrer.js"></script>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <h2>Orange Digital Kalanso</h2>
+        <img src="Orange_logo.svg.png" alt="Image représantant le logo d'Orange" width="50px" height="50px">
+    </div>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="Enregistrer.html">Enregistrer</a></li>
+            <li><a href="Rechercher.html">Rechercher</a></li>
+            <li><a href="Modifier.html">Modifier</a></li>
+            <li><a href="Supprimer.html">Supprimer</a></li>
+            <li><a href="list.php">Liste</a></li>
+        </ul>
+    </nav>
+</header>
+<h3>Section d'inscription</h3>
+<form action="enregistrer.php" method="POST" enctype="multipart/form-data">
+    <div class="container">
+    <label for="nom">Nom :</label>
+    <input type="text" name="nom" id="nom" required>
+
+    <label for="prénom">Prénom :</label>
+    <input type="text" name="prénom" id="prénom" required>
+
+    <label for="dateNaissance">Date de naissance :</label>
+    <input type="date" name="dateNaissance" id="dateNaissance" required>
+
+    <label for="âge">Âge :</label>
+    <input type="number" name="âge" id="âge" required>
+
+    <label for="photo">Photo :</label>
+    <input type="file" name="photo" id="photo" required>
+
+    <label for="tel">Téléphone :</label>
+    <input type="tel" name="tel" id="tel" required>
+
+    <label for="email">Adresse e-mail :</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="promotion">Promotion :</label>
+    <select name="promotion" id="promotion" required>
+        <option value="P1">Promotion 1</option>
+        <option value="P2">Promotion 2</option>
+        <option value="P3">Promotion 3</option>
+    </select>
+
+    <label for="annee">Année de certification :</label>
+    <input type="number" name="annee" id="annee" required>
+
+    <input type="submit" value="Enregistrer">
+</div>
+</form>
+<footer>
+</footer>
+</body>
+</html>
